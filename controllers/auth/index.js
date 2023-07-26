@@ -6,14 +6,16 @@ const logout = require("./logout");
 const getCurrent = require("./getCurrent");
 const subscription = require("./subscription");
 const updateAvatar = require("./updateAvatar");
-
-
+const verifyEmail = require("./verifyEmail");
+const resendVerifyEmail = require("./resendVerifyEmail");
 
 module.exports = {
-    register: ctrlWrapper(register),
-    login: ctrlWrapper(login),
-    getCurrent: ctrlWrapper(getCurrent),
-    logout: ctrlWrapper(logout),
-    subscription: ctrlWrapper(subscription),
-    updateAvatar: ctrlWrapper(updateAvatar),
-  };
+  register: ctrlWrapper(register),
+  login: ctrlWrapper(login),
+  getCurrent: ctrlWrapper(getCurrent),
+  logout: ctrlWrapper(logout),
+  subscription: ctrlWrapper(subscription),
+  updateAvatar: ctrlWrapper(updateAvatar),
+  verifyEmail: ctrlWrapper(verifyEmail),
+  resendVerifyEmail: ctrlWrapper(resendVerifyEmail),
+};
